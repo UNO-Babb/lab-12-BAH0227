@@ -1,44 +1,46 @@
-Name:
+Name: Brock Hoover
 
-Number of elements:
+Number of elements: 10,000
 
 Bubble Sort
-Sorted:
-Reversed:
-Random:
+Sorted: 2.43081 seconds
+Reversed: 5.66665 seconds
+Random: 4.42645 seconds
 
 Bubble Sort Early Exit
-Sorted:
-Reversed:
-Random:
+Sorted: 0.00086 seconds
+Reversed: 6.35623 seconds
+Random: 4.90888 seconds
 
 Selection Sort
-Sorted:
-Reversed:
-Random:
+Sorted: 2.02758 seconds
+Reversed: 2.16216 seconds
+Random: 1.99526 seconds
 
 Insertion Sort
-Sorted:
-Reversed:
-Random:
+Sorted: 0.00100 seconds
+Reversed: 4.37079 seconds
+Random: 2.28687 seconds
 
 Merge Sort
-Sorted:
-Reversed:
-Random:
+Sorted: 0.01574 seconds
+Reversed: 0.01592 seconds
+Random: 0.02266 seconds
 
 Questions to answer:
 1) What was the worst case scenario for any sorting technique?
-
+The worst case scenario for any sorting technique was the Bubble Sort Early Exit with a 6.35623 second runtime for the reversed list.
 
 2) The first 3 sorts have the same runtime of O(n^2). Why were the times different? Why would one be more efficient than the others?
-
+The times were different for the sorts because Bubble Sort involves comparing two values to each other and "switching" them, while selection sort ends up being more efficient because it is simply trying to find the largest data point on each pass
+instead of doing a lot of comparing. The runtimes are different between the two bubble sorts because the Bubble Sort early exit does well on a sorted list, but adds time by constantly checking for the potential exit.
 
 3) Why was merge sort so much more efficient?
-
+Because Merge sort continuously breaks the data in half, resulting in a much faster runtime as it doesn't lose much time as the dataset scales up. 
 
 4) The built-in sorting technique for most programming languages is known as TimSort.
 This is a merge sort until the arrays have fewer than 10 elements, then it does an insertion sort. Why would this be useful?
-
+This would be useful because merge sort isn't the fastest with small lists, because it only does a few less sorts with a small data set then a much larger data set.
 
 5) What issues can you see with a recursive sorting technique like merge sort?
+I could see it being demanding on lower end hardware, and it doesn't do well with small lists.
